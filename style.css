@@ -1,0 +1,723 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: 'NEXTART';
+    src: local('Nextartbold'),
+        url('fonts/Nextartbold.woff2') format('woff2'),
+        url('fonts/Nextartbold.woff') format('woff' );
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'NEXTART';
+    src: local('NEXTART'),
+        url('fonts/NEXTART.woff2') format('woff2'),
+        url('fonts/NEXTART.woff') format('woff' );
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+body {
+    font-family: 'Roboto', 'NEXTART', sans-serif;
+}
+a {
+    color: inherit;
+}
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+.header {
+    background: linear-gradient(101.56deg, #2C2C2C 1.56%, #1C1C1C 95.55%);
+    padding-top: 30px;
+}
+.header .wrapper {
+    justify-content: end;
+}
+.menu {
+    display: flex;
+    gap: 145px;
+}
+.menu-link {
+    position: relative;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #E4E4E4;
+}
+.menu-link:active {
+    color: #414141;
+}
+.menu-link::before {
+    content: '';
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(rgba(226, 163, 0, 1),
+    rgba(226, 149, 0, 1));
+    transition: all ease-in-out 0.5s;
+}
+.menu-link:hover:before {
+    opacity: 1;
+}
+.hero {
+    background: linear-gradient(101.56deg, #2C2C2C 1.56%, #1C1C1C 95.55%);
+}
+.hero .wrapper {
+    position: relative;
+    flex-direction: column;
+    padding-top: 194px;
+    padding-bottom: 142px;
+    background-image: url(img/circle.png);
+    background-repeat: no-repeat;
+    background-size: 800px 800px;
+    background-position: 450px 98px;
+    animation-name: left;
+    animation-duration: 3s;
+}
+@keyframes left {
+    0%{
+        left: -500px;
+    }
+    100%{
+        left: 0;
+    }
+}
+.sub-title {
+    font-family: 'NEXTART';
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 54px;
+    color: #E4E4E4;
+    margin-bottom: 27px;
+    text-transform: uppercase;
+}
+.title {
+    font-family: 'NEXTART';
+    max-width: 500px;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 82px;
+    color: #E4E4E4;
+    margin-bottom: 27px;
+    text-transform: uppercase;
+}
+.hero-descr {
+    max-width: 430px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #E4E4E4;
+    margin-bottom: 27px;
+}
+.link-contact {
+    font-family: 'NEXT ART';
+    padding: 14px 38px;
+    background: linear-gradient(87.32deg, #E2A300 4.47%, #E29500 95.53%);
+    box-shadow: 0px 2px 13px rgba(226, 158, 0, 0.48);
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: uppercase;
+    align-self: start;
+    color: #000000;
+    transition: all ease-in-out 0.5s;
+}
+.link-contact:hover {
+    background: linear-gradient(87.32deg, #E2A300 4.47%, #f3ad21 95.53%);
+}
+.link-contact:active {
+    background: linear-gradient(87.32deg, #E2A300 4.47%, #a3710d 95.53%);
+}
+.cercl-stack {
+    font-family: 'NEXTART';
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 41px;
+    color: #00C4F0;
+}
+.cercl-1 {
+    bottom: 100px;
+    left: 0;
+    animation-name: cirkle;
+    animation-duration: 10s;
+}
+.cercl-2 {
+    bottom: 300px;
+    left: -30px;
+    animation-name: cirkle;
+    animation-duration: 11s;
+}
+.cercl-3 {
+    bottom: 450px;
+    left: 70px;
+    animation-name: cirkle;
+    animation-duration: 12s;
+}
+.cercl-4 {
+    bottom: 450px;
+    left: 340px;
+    animation-name: cirkle;
+    animation-duration: 13s;
+}
+.cercl-5 {
+    bottom: 300px;
+    left: 440px;
+    animation-name: cirkle;
+    animation-duration: 14s;
+}
+@keyframes cirkle {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+
+}
+
+.foto-container {
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    width: 600px;
+}
+.about {
+    background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+}
+.about .wrapper {
+    position: relative;
+    flex-direction: column;
+    padding-top: 180px;
+    padding-bottom: 160px;
+}
+.section-title {
+    font-family: 'NEXTART';
+    position: absolute;
+    top: -30px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 54px;
+    color: #E4E4E4;
+}
+.about-text {
+    position: relative;
+    align-self: center;
+    padding: 63px;
+    max-width: 496px;
+    background: #2C2C2C;
+    border-radius: 14px;
+    z-index: 10;
+}
+.about-descr {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+.about-img {
+    width: 272px;
+    height: 320px;
+}
+.photo-about {
+    z-index: 10;
+    position: absolute;
+    padding: 20px;
+    background: #2C2C2C;
+    border-radius: 14px;
+}
+.photo-1 {
+    top: -10%;
+    left: -280px;
+}
+.photo-2 {
+    top: 20%;
+    right: -280px;
+}
+.photo-3 {
+    top: 60%;
+    left: -280px;
+}
+.bg-left {
+    position: absolute;
+    left: -300px;
+    top: 70px;
+    animation-name: impulse;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+}
+.bg-top {
+    position: absolute;
+    top: 100px;
+    right: 70px;
+    animation-name: impulse;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+}
+.bg-bot {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    animation-name: impulse;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+}
+@keyframes impulse {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.portfolio {
+    padding-top: 100px;
+    padding-bottom: 150px;
+    background: linear-gradient(101.56deg, #2C2C2C 1.56%, #1C1C1C 95.55%);
+}
+.portfolio .wrapper {
+    flex-direction: column;
+}
+.port-title {
+    font-family: 'NEXTART';
+    text-align: center;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 54px;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+.slider {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.slide {
+    position: relative;
+    left: 0;
+    min-width: 100%;
+    padding: 50px;
+    background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+    box-shadow: 0px 4px 15px rgba(27, 27, 27, 0.28);
+    border-radius: 29px;
+    transition: all ease 1s;
+}
+.slide-photo {
+    width: 100%;
+    height: 700px;
+}
+.button {
+    cursor: pointer;
+    position: absolute;
+    padding: 12px;
+    background: linear-gradient(87.32deg, #E2A300 4.47%, #E29500 95.53%);
+    border-radius: 50%;
+    transition: all ease-in-out 0.3s;
+}
+.button:hover {
+    background: linear-gradient(87.32deg, #E2A300 4.47%, #f3ad21 95.53%);
+}
+.button:active {
+    background: linear-gradient(87.32deg, #E2A300 4.47%, #a3710d 95.53%);
+}
+.left-arrow {
+    left: 0px;
+    top: 50%;
+}
+.right-arrow {
+    right: 0px;
+    top: 50%;
+}
+.footer {
+    padding: 50px 0;
+    background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+}
+.footer-link {
+    transition: all ease-in-out 0.5s;
+}
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #E4E4E4;
+    row-gap: 18px;
+    margin-right: 150px;
+}
+.footer-link:hover {
+    color: #aa9f9f;
+}
+.address {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    color: #E4E4E4;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+}
+.address a{
+    transition: all ease-in-out 0.5s;
+}
+.address a:hover {
+    color: #aa9f9f;
+}
+.contact-title {
+    margin-bottom: 18px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #E4E4E4;
+}
+
+@media (max-width: 1025px){
+    .hero .wrapper {
+        background-position: 230px 70px;
+    }
+    .wrapper {
+        max-width: 96%;
+    }
+    .sub-title {
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+    .title {
+        font-size: 52px;
+        margin-bottom: 10px;
+    }
+    .about-text {
+        padding: 30px;
+    }
+    .about-img {
+        width: 200px;
+        height: 250px;
+    }
+    .photo-1 {
+        left: -220px;
+    }
+    .photo-2 {
+        right: -220px;
+    }
+    .photo-3 {
+        left: -220px;
+    }
+    .bg-left {
+        width: 600px;
+        height: 600px;
+        left: -100px;
+        top: 170px;
+    }
+    .bg-top {
+        width: 350px;
+        height: 350px;
+        top: 130px;
+    }
+    .bg-bot {
+        width: 450px;
+        height: 450px;
+        bottom: 50px;
+    }
+    .slide-photo {
+        height: 400px;
+    }
+}
+@media (max-width: 769px) {
+    .hero .wrapper {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background-size: 600px 600px;
+        background-position: 230px 0px;
+    }
+    .hero-foto {
+        position: absolute;
+        bottom: 170px;
+        right: 80px;
+        width: 265px;
+        height: 474px;
+    }
+    .hero-descr {
+        max-width: 380px;
+    }
+    .cercl-stack {
+        width: 60px;
+        height: 60px;
+        font-size: 16px;
+    }
+    .cercl-1 {
+        bottom: 160px;
+        left: 250px;
+    }
+    .cercl-2 {
+        left: 190px;
+    }
+    .cercl-3{
+        left: 270px;
+    }
+    .cercl-4 {
+        left: 450px;
+    }
+    .cercl-5 {
+        left: 540px;
+    }
+    .about .wrapper {
+        padding-bottom: 50px;
+    }
+    .about-text {
+        max-width: 380px;
+    }
+    .about-img {
+        width: 150px;
+        height: 200px;
+    }
+    .photo-1 {
+        left: -160px;
+        top: -5%;
+    }
+    .photo-2 {
+        right: -160px;
+    }
+    .photo-3 {
+        left: -160px;
+        top: 50%;
+    }
+    .bg-bot {
+        bottom: 100px;
+    }
+    .slide-photo {
+        height: 350px;
+    }
+    .portfolio {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .port-title {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 481px) {
+    .menu {
+        gap: 50px;
+    }
+    .hero .wrapper {
+        padding-top: 60px;
+        padding-bottom: 50px;
+        background-size: 400px 400px;
+        background-position: 150px 38px;
+    }
+    .sub-title {
+        font-size: 28px;
+        line-height: 28px;
+    }
+    .title {
+        font-size: 28px;
+        line-height: 38px;
+        max-width: 250px;
+        margin-bottom: 20px;
+    }
+    .hero-descr {
+        max-width: 240px;
+    }
+    .hero-foto {
+        width: 200px;
+        height: 330px;
+        right: 20px;
+        bottom: 150px;
+    }
+    .cercl-stack {
+        width: 40px;
+        height: 40px;
+        font-size: 12px;
+    }
+    .cercl-1 {
+        bottom: 200px;
+        left: 370px;
+    }
+    .cercl-2 {
+        left: 360px;
+        bottom: 300px;
+    }
+    .cercl-3 {
+        left: 420px;
+        bottom: 365px;
+    }
+    .cercl-4 {
+        left: 520px;
+        bottom: 365px;
+    }
+    .cercl-5 {
+        left: 570px;
+    }
+    .about .wrapper {
+        padding-top: 70px;
+    }
+    .about-text {
+        max-width: 100%;
+    }
+    .photo-about {
+        display: none;
+    }
+    .bg-left {
+        width: 250px;
+        height: 250px;
+        top: -30px;
+        left: -50px;
+    }
+    .bg-top {
+        width: 250px;
+        height: 250px;
+        top: -30px;
+        right: -10px;
+    }
+    .bg-bot {
+        width: 350px;
+        height: 350px;
+        bottom: -40px;
+    }
+    .slide-photo {
+        height: 200px;
+    }
+    .portfolio {
+        padding-top: 40px;
+    }
+    .slide {
+        padding: 30px;
+    }
+    .left-arrow {
+        top: 40%;
+    }
+    .right-arrow {
+        top: 40%;
+    }
+}
+@media (max-width: 361px) {
+    .menu {
+        gap: 25px;
+    }
+    .hero-descr {
+        max-width: 180px;
+    }
+    .hero-foto {
+        right: 20px;
+        bottom: 250px;
+        width: 160px;
+        height: 230px;
+    }
+    .hero .wrapper {
+        background-size: 300px 300px;
+        background-position: 100px 80px;
+    }
+    .cercl-1 {
+        left: 420px;
+        bottom: 250px;
+    }
+    .cercl-2 {
+        left: 400px;
+        bottom: 330px;
+    }
+    .cercl-3 {
+        bottom: 390px;
+        left: 440px;
+    }
+    .cercl-4 {
+        left: 530px;
+        bottom: 390px;
+    }
+    .cercl-5 {
+        bottom: 330px;
+    }
+    .bg-left {
+        width: 200px;
+        height: 200px;
+        top: -10px;
+        left: -30px;
+    }
+    .bg-top {
+        width: 200px;
+        height: 200px;
+        top: -10px;
+        right: -30px;
+    }
+    .bg-bot {
+        width: 300px;
+        height: 300px;
+        bottom: -30px;
+    }
+    .button {
+        padding: 6px;
+    }
+    .footer-menu {
+        margin-right: 60px;
+    }
+}
+@media (max-width: 321px) {
+    .menu {
+        gap: 15px;
+    }
+    .hero .wrapper {
+        padding-top: 50px;
+        background-position: 60px 10px;
+    }
+    .sub-title {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    .title {
+        font-size: 24px;
+        max-width: 200px;
+    }
+    .hero-foto {
+        bottom: 300px;
+    }
+    .cercl-1 {
+        left: 425px;
+        bottom: 290px;
+    }
+    .cercl-2 {
+        left: 400px;
+        bottom: 360px;
+    }
+    .cercl-3 {
+        bottom: 440px;
+        left: 440px;
+    }
+    .cercl-4 {
+        left: 530px;
+        bottom: 440px;
+    }
+    .cercl-5 {
+        bottom: 360px;
+    }
+    .bg-left {
+        left: -10px;
+    }
+    .bg-top {
+        right: -20px;
+    }
+    .bg-bot {
+        left: 0;
+    }
+    .footer-menu {
+        margin-right: 30px;
+    }
+}
