@@ -621,6 +621,37 @@ a {
         background-position: 90px 85px;
     }
 }
+@media (max-width: 391px) {
+    .hero .wrapper {
+        background-size: 300px 300px;
+        background-position: 130px 80px;
+    }
+    .hero-foto {
+        right: 20px;
+        bottom: 250px;
+        width: 160px;
+        height: 230px;
+    }
+    .cercl-1 {
+        left: 420px;
+        bottom: 250px;
+    }
+    .cercl-2 {
+        left: 400px;
+        bottom: 330px;
+    }
+    .cercl-3 {
+        bottom: 390px;
+        left: 440px;
+    }
+    .cercl-4 {
+        left: 530px;
+        bottom: 390px;
+    }
+    .cercl-5 {
+        bottom: 330px;
+    }
+}
 @media (max-width: 361px) {
     .menu {
         gap: 25px;
